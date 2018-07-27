@@ -79,18 +79,23 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="想必很多人会把Hexo生成出来的静态网站放到GitHub Pages来进行托管。一般发布Hexo博客的流程是，首先在本地搭建Hexo的环境，编写新文章，然后利用hexo deploy来发布到Git。那么对于本地的Hexo的原始文件怎么管理呢？如果换电脑了怎么办？如果没有对原始文件进行备份，突然有一天你的本地环境挂了导致源文件丢失，那不就呵呵了。也许你会想到用Dropbox或者其他方案来对源文件进行">
 <meta name="keywords" content="web, 前端, html5, css3, javascript, ES6, 工程化, 技术博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/07/08/hello-world/index.html">
+<meta property="og:title" content="Hexo的版本控制与持续集成">
+<meta property="og:url" content="http://yoursite.com/2018/07/08/Hexo的版本控制与持续集成/index.html">
 <meta property="og:site_name" content="张闵的技术博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="想必很多人会把Hexo生成出来的静态网站放到GitHub Pages来进行托管。一般发布Hexo博客的流程是，首先在本地搭建Hexo的环境，编写新文章，然后利用hexo deploy来发布到Git。那么对于本地的Hexo的原始文件怎么管理呢？如果换电脑了怎么办？如果没有对原始文件进行备份，突然有一天你的本地环境挂了导致源文件丢失，那不就呵呵了。也许你会想到用Dropbox或者其他方案来对源文件进行">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-08T08:51:44.000Z">
+<meta property="og:image" content="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-login.png">
+<meta property="og:image" content="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-add-project.png">
+<meta property="og:image" content="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-encrypt.png">
+<meta property="og:image" content="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-setting.png">
+<meta property="og:updated_time" content="2018-07-27T17:22:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Hexo的版本控制与持续集成">
+<meta name="twitter:description" content="想必很多人会把Hexo生成出来的静态网站放到GitHub Pages来进行托管。一般发布Hexo博客的流程是，首先在本地搭建Hexo的环境，编写新文章，然后利用hexo deploy来发布到Git。那么对于本地的Hexo的原始文件怎么管理呢？如果换电脑了怎么办？如果没有对原始文件进行备份，突然有一天你的本地环境挂了导致源文件丢失，那不就呵呵了。也许你会想到用Dropbox或者其他方案来对源文件进行">
+<meta name="twitter:image" content="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-login.png">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/08/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/08/Hexo的版本控制与持续集成/"/>
 
 
 
 
 
-  <title>Hello World | 张闵的技术博客</title>
+  <title>Hexo的版本控制与持续集成 | 张闵的技术博客</title>
   
 
 
@@ -291,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/08/Hexo的版本控制与持续集成/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闵 < Jomy King >">
@@ -308,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo的版本控制与持续集成</h1>
         
 
         <div class="post-meta">
@@ -331,6 +336,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -338,7 +365,7 @@
 
           
           
-             <span id="/2018/07/08/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2018/07/08/Hexo的版本控制与持续集成/" class="leancloud_visitors" data-flag-title="Hexo的版本控制与持续集成">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,15 +396,33 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>想必很多人会把Hexo生成出来的静态网站放到GitHub Pages来进行托管。一般发布Hexo博客的流程是，首先在本地搭建Hexo的环境，编写新文章，然后利用<font color="#0099ff" face="黑体">hexo deploy</font>来发布到Git。那么对于本地的Hexo的原始文件怎么管理呢？如果换电脑了怎么办？如果没有对原始文件进行备份，突然有一天你的本地环境挂了导致源文件丢失，那不就呵呵了。也许你会想到用Dropbox或者其他方案来对源文件进行备份，但是每次更新完博客，需要备份好源文件，然后执行<font color="#0099ff" face="黑体">hexo deploy</font>进行发布，是不是很麻烦？换了电脑之后又要重新搭建本地环境，是不是很蛋疼？<br>那么接下来我们就来说说如何优雅愉快地对我们的Hexo进行版本管理和发布。<br>既然我们已经用了GitHub来托管我们生成出来的静态网站，那么为什么不也把Hexo博客的源文件也host在GitHub上呢。那么问题来了，如果我们把Hexo博客的源文件托管在GitHub上，我们的发布流程就会变为：</p>
+<ol>
+<li>执行<font color="#0099ff" face="黑体">git push</font>把更新的源文件push到托管源文件的GitHub Repo (我们称之为Source Repo)</li>
+<li>执行<font color="#0099ff" face="黑体">hexo deploy</font>来更新托管静态网站的GitHub Pages (我们称之为Content Repo)</li>
+</ol>
+<p>这样看来，每次更新博客要经历两个步骤，并不是那么straightforward。那么有没有办法做到既能使用GitHub进行版本控制，又能做到一键发布呢？</p>
+<p>答案是肯定的。这里用到了<a href="https://en.wikipedia.org/wiki/Continuous_integration" target="_blank" rel="noopener">持续集成</a>也就是我们一直所说的CI来完成一键发布：当有新的change push到Source Repo时，自动执行CI脚本，生成最新的静态网站发布到Content Repo，一气呵成。那么我使用什么CI工具来做呢？我们可以使用像Travis CI这样的Hosted CI Service，也可以使用Jenkins或者TeamCity来搭建CI server。如果自己来搭建CI Server，费时费力，又要花钱来买Server来host CI service，肯定不是一个很好的选择。那么我们选哪个Hosted CI Service呢？其实今年在公司的一个项目中我们就选择了AppVeyor。当初在做investigation的时候，第一个想到的就是用Travis CI，然而我司大多数的开发环境都是Windows，而且当时的项目有Python, PowerShell, Java等，那时PowerShell还只支持Windows，所以需要选择一个支持Windows的CI Service。于是，Scott Hanselman安利的<a href="http://www.hanselman.com/blog/AppVeyorAGoodContinuousIntegrationSystemIsAJoyToBehold.aspx" target="_blank" rel="noopener">AppVeyor</a>就成为了一个备选。访问<a href="https://www.appveyor.com" target="_blank" rel="noopener">AppVeyor官网</a>，映入眼帘的大标题就是<font color="#0099ff" face="黑体">#1 Continuous Delivery service for Windows</font>。刚开始的时候内心一阵嘲笑，Top 10的CI Service就你支持Windows，你不是第一那谁是第一？结果在之后的项目使用中，发现AppVeyor比Travis CI好用太多。这里就不具体展开了，继续进入正题。</p>
+<h2 id="使用AppVeyor来建立CI非常方便，主要是以下步骤："><a href="#使用AppVeyor来建立CI非常方便，主要是以下步骤：" class="headerlink" title="使用AppVeyor来建立CI非常方便，主要是以下步骤："></a>使用AppVeyor来建立CI非常方便，主要是以下步骤：</h2><ol>
+<li><p>注册并登陆AppVeyor<br>访问<a href="https://ci.appveyor.com/login" target="_blank" rel="noopener">AppVeyor登陆页面</a>，使用你的GitHub账号登陆即可。<br><img src="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-login.png"></p>
+</li>
+<li><p>添加Project<br>在<a href="https://ci.appveyor.com/projects/new" target="_blank" rel="noopener">AppVeyor Projects页面</a>，添加相应的GitHub Source Repo。<br><img src="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-add-project.png"></p>
+</li>
+<li><p>添加appveyor.yml到Source Repo<br>接下来，你需要把appveyor.yml添加到Source Repo的根目录下。具体的appveyor.yml如下，也可以参考我博客的<a href="https://github.com/formulahendry/formulahendry.github.io.source/blob/master/appveyor.yml" target="_blank" rel="noopener">appveyor.yml</a></p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">clone_depth: 5</span><br><span class="line">environment:</span><br><span class="line">access_token:</span><br><span class="line">    secure: [Your GitHub Access Token]</span><br><span class="line">install:</span><br><span class="line">- node --version</span><br><span class="line">- npm --version</span><br><span class="line">- npm install</span><br><span class="line">- npm install hexo-cli -g</span><br><span class="line">build_script:</span><br><span class="line">- hexo generate</span><br><span class="line">artifacts:</span><br><span class="line">- path: public</span><br><span class="line">on_success:</span><br><span class="line">- git config --global credential.helper store</span><br><span class="line">- ps: Add-Content <span class="string">"<span class="variable">$env</span>:USERPROFILE\.git-credentials"</span> <span class="string">"https://<span class="variable">$($env:access_token)</span>:x-oauth-basic@github.com`n"</span></span><br><span class="line">- git config --global user.email <span class="string">"%GIT_USER_EMAIL%"</span></span><br><span class="line">- git config --global user.name <span class="string">"%GIT_USER_NAME%"</span></span><br><span class="line">- git <span class="built_in">clone</span> --depth 5 -q --branch=%TARGET_BRANCH% %STATIC_SITE_REPO% %TEMP%\static-site</span><br><span class="line">- <span class="built_in">cd</span> %TEMP%\static-site</span><br><span class="line">- del * /f /q</span><br><span class="line">- <span class="keyword">for</span> /d %%p IN (*) <span class="keyword">do</span> rmdir <span class="string">"%%p"</span> /s /q</span><br><span class="line">- SETLOCAL EnableDelayedExpansion &amp; robocopy <span class="string">"%APPVEYOR_BUILD_FOLDER%\public"</span> <span class="string">"%TEMP%\static-site"</span> /e &amp; IF !ERRORLEVEL! EQU 1 (<span class="built_in">exit</span> 0) ELSE (IF !ERRORLEVEL! EQU 3 (<span class="built_in">exit</span> 0) ELSE (<span class="built_in">exit</span> 1))</span><br><span class="line">- git add -A</span><br><span class="line">- <span class="keyword">if</span> <span class="string">"%APPVEYOR_REPO_BRANCH%"</span>==<span class="string">"master"</span> <span class="keyword">if</span> not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --<span class="built_in">exit</span>-code --cached || git commit -m <span class="string">"Update Static Site"</span> &amp;&amp; git push origin %TARGET_BRANCH% &amp;&amp; appveyor AddMessage <span class="string">"Static Site Updated"</span>)</span><br></pre></td></tr></table></figure>
+<p>你唯一需要做的就是替换[Your GitHub Access Token]，关于生成Access Token，可以参考这篇<a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/" target="_blank" rel="noopener">文章</a>。在GitHub生成好Access Token之后，你需要到<a href="https://ci.appveyor.com/tools/encrypt" target="_blank" rel="noopener">AppVeyor加密页面</a>把Access Token加密之后再替换[Your GitHub Access Token]<br><img src="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-encrypt.png"></p>
+<ol start="4">
+<li>设置Appveyor<br>添加好appveyor.yml之后，再到Appveyor portal设置以下四个变量。STATIC_SITE_REPO就是Content Repo的地址，TARGET_BRANCH就是你Content Repo的branch，一般默认就是master，GIT_USER_EMAIL和GIT_USER_NAME就是你GitHub账号的信息。<br><img src="https://formulahendry.github.io/assets/img/hexo-ci/appveyor-setting.png"><br>好了，一切大功告成！试一下<font color="#0099ff" face="黑体">git push</font>你的change到Source Repo，几分钟内，你的博客就自动更新了！</li>
+</ol>
+<p>背后的过程如下:</p>
+<ol>
+<li>Git push to Source Repo</li>
+<li>–&gt; AppVeyor CI</li>
+<li>–&gt; Update GitHub Pages Content Repo</li>
+<li>–&gt; Generate your Hexo blog site<br>最后肯定会有人问，为什么不用Jekyll或者WordPress啊？为什么选Hexo呢？在下一篇博客中我将详细道来，敬请期待！</li>
+</ol>
 
       
     </div>
@@ -387,6 +432,35 @@
 
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="张闵 < Jomy King > 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="张闵 < Jomy King > 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -408,8 +482,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/08/page/" rel="prev" title="page">
-                page <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/08/Hexo+Next集成Algolia搜索/" rel="prev" title="Hexo+Next集成Algolia搜索">
+                Hexo+Next集成Algolia搜索 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -498,6 +572,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
 
@@ -582,7 +665,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用AppVeyor来建立CI非常方便，主要是以下步骤："><span class="nav-number">1.</span> <span class="nav-text">使用AppVeyor来建立CI非常方便，主要是以下步骤：</span></a></li></ol></div>
             
 
           </div>
@@ -667,6 +750,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -701,6 +787,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
